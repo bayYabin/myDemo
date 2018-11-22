@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qkc.mstation.dao.MsRoomMapper">
+  <resultMap id="BaseResultMap" type="com.qkc.mstation.pojo.MsRoom">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="source_id" jdbcType="INTEGER" property="sourceId" />
+    <result column="room_name" jdbcType="VARCHAR" property="roomName" />
+    <result column="room_type" jdbcType="INTEGER" property="roomType" />
+    <result column="room_content_type" jdbcType="INTEGER" property="roomContentType" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="password_required" jdbcType="INTEGER" property="passwordRequired" />
+    <result column="student_pwd" jdbcType="VARCHAR" property="studentPwd" />
+    <result column="teacher_pwd" jdbcType="VARCHAR" property="teacherPwd" />
+    <result column="assistant_pwd" jdbcType="VARCHAR" property="assistantPwd" />
+    <result column="patrol_pwd" jdbcType="VARCHAR" property="patrolPwd" />
+    <result column="video_type" jdbcType="INTEGER" property="videoType" />
+    <result column="video_framerate" jdbcType="INTEGER" property="videoFramerate" />
+    <result column="is_delete" jdbcType="INTEGER" property="isDelete" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="teacher_id" jdbcType="BIGINT" property="teacherId" />
+    <result column="room_third_id" jdbcType="VARCHAR" property="roomThirdId" />
+    <result column="kcx_user_id" jdbcType="VARCHAR" property="kcxUserId" />
+    <result column="room_cup" jdbcType="INTEGER" property="roomCup" />
+    <result column="homework_template_id" jdbcType="BIGINT" property="homeworkTemplateId" />
+    <result column="course_id" jdbcType="BIGINT" property="courseId" />
+    <result column="is_end" jdbcType="INTEGER" property="isEnd" />
+    <result column="template_id" jdbcType="BIGINT" property="templateId" />
+    <result column="room_mark" jdbcType="INTEGER" property="roomMark" />
+    <result column="class_hour" jdbcType="INTEGER" property="classHour" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, source_id, room_name, room_type, room_content_type, start_time, end_time, password_required, 
+    student_pwd, teacher_pwd, assistant_pwd, patrol_pwd, video_type, video_framerate, 
+    is_delete, create_time, update_time, teacher_id, room_third_id, kcx_user_id, room_cup, 
+    homework_template_id, course_id, is_end, template_id, room_mark, class_hour
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ms_room
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+
+</mapper>
