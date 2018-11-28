@@ -14,7 +14,7 @@ import java.util.Map;
  * Created by qukoucai001 on 2018/11/22.
  */
 @RestController
-@RequestMapping("/superadmin")
+@RequestMapping("/room")
 public class MsRoomController {
     @Autowired
     private MsRoomService msRoomService;
