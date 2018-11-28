@@ -23,6 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<mybatis-paginator-version>1.2.8</mybatis-paginator-version>
 		<java.version>1.8</java.version>
+		<lombok.version>1.14.2</lombok.version>
 	</properties>
 
 	<dependencies>
@@ -39,7 +40,11 @@
 
 		<!---->
 
-
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
