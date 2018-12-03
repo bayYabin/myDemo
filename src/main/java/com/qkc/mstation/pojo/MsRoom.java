@@ -73,12 +73,7 @@ public class MsRoom implements Serializable {
                 ", classStatus='" + classStatus + '\'' +
                 ", note='" + note + '\'' +
                 ", operateAccount='" + operateAccount + '\'' +
-                ", msStartAndEnd=" + msStartAndEnd +
-                ", msRealStartTime=" + msRealStartTime +
-                ", teacherPhone='" + teacherPhone + '\'' +
-                ", studentPhone='" + studentPhone + '\'' +
-                ", kcxUserList=" + kcxUserList +
-                ", qkcUserList=" + qkcUserList +
+      
                 '}'+"<<<------------------------------";
     }
 
@@ -122,15 +117,7 @@ public class MsRoom implements Serializable {
         this.roomStatus = roomStatus;
     }
 
-    private KcxUser kcxUser;
 
-    public KcxUser getKcxUser() {
-        return kcxUser;
-    }
-
-    public void setKcxUser(KcxUser kcxUser) {
-        this.kcxUser = kcxUser;
-    }
 
     public String getClassStatus() {
         return classStatus;
@@ -414,8 +401,8 @@ public class MsRoom implements Serializable {
     private String note;
     private String operateAccount;
 
-    private List<MsStartAndEnd> msStartAndEnd;
-    private List<MsRealStartTime> msRealStartTime;
+
+
 
     private Integer classHour;//一堂课所占课时
 
@@ -427,21 +414,6 @@ public class MsRoom implements Serializable {
         this.classHour = classHour;
     }
 
-    public List<MsStartAndEnd> getMsStartAndEnd() {
-        return msStartAndEnd;
-    }
-
-    public void setMsStartAndEnd(List<MsStartAndEnd> msStartAndEnd) {
-        this.msStartAndEnd = msStartAndEnd;
-    }
-
-    public List<MsRealStartTime> getMsRealStartTime() {
-        return msRealStartTime;
-    }
-
-    public void setMsRealStartTime(List<MsRealStartTime> msRealStartTime) {
-        this.msRealStartTime = msRealStartTime;
-    }
 
     public String getTeacherPhone() {
         return teacherPhone;
@@ -520,24 +492,6 @@ public class MsRoom implements Serializable {
 
 
 
-    private List<KcxUser> kcxUserList;
-    private List<QkcUser> qkcUserList;
-
-    public List<QkcUser> getQkcUserList() {
-        return qkcUserList;
-    }
-
-    public void setQkcUserList(List<QkcUser> qkcUserList) {
-        this.qkcUserList = qkcUserList;
-    }
-
-    public List<KcxUser> getKcxUserList() {
-        return kcxUserList;
-    }
-
-    public void setKcxUserList(List<KcxUser> kcxUserList) {
-        this.kcxUserList = kcxUserList;
-    }
 
     public String getTime() {
         return time;
