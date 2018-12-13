@@ -8,7 +8,7 @@ import org.junit.Test;
 public class Main {
 
 
-    @Test
+//    @Test
     public void f1() {
         System.out.println("Test");
     }
