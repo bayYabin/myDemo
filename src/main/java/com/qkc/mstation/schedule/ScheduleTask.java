@@ -22,7 +22,7 @@ public class ScheduleTask {
 
 
 
-    @Scheduled(fixedRate = 10*1000)
+//    @Scheduled(fixedRate = 10*1000)
     public void myScheduled(){
         logger.info("ScheduleTask:"+new Date());
    }
