@@ -44,7 +44,7 @@ public class QkcEvalTemplateController {
     /**
      *  hello
      */
-    @GetMapping("/hello")
+    @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public ApiResult hello( ) {
         logger.info("hello");
         return ApiResult.ok("hello");
