@@ -1,14 +1,15 @@
 pipeline {
    agent any
-
-    environment {
-        CI = 'true'
-    }
     stages {
         stage('Build') {
             steps {
-                bat 'mvn install'
-                bat 'mvn install'
+                sh 'mvn install'               
+            }
+        }
+		
+		stage('Deploy') {
+            steps {
+                sh 'echo hello'               
             }
         }
 
