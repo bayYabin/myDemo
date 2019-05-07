@@ -45,9 +45,10 @@ public class QkcEvalTemplateController {
      *  hello
      */
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
-    public ApiResult hello( ) {
+    public ApiResult hello(Long id ) {
         logger.info("hello");
-        return ApiResult.ok("hello");
+        QkcEvalTemplate qkcEvalTemplate = qkcEvalTemplateService.selectByPrimaryKey(id);
+        return ApiResult.ok(qkcEvalTemplate);
     }
 
 
