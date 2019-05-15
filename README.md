@@ -14,3 +14,4 @@ ssh add
 rsa deleted
 
 build
+main
