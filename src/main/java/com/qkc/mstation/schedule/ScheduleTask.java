@@ -24,6 +24,6 @@ public class ScheduleTask {
 
 //    @Scheduled(fixedRate = 10*1000)
     public void myScheduled(){
-        logger.info("ScheduleTask:"+new Date());
+        logger.info("ScheddfgdfuleTask:"+new Date());
    }
 }

@@ -28,6 +28,7 @@ public class QkcEvalTemplate implements Serializable {
     private String  creatorName;
 
     private Date createTime;
+    private Date createTffime;
 
     private static final long serialVersionUID = 1L;
 
