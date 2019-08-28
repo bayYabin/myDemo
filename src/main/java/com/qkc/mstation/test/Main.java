@@ -6,10 +6,7 @@ package com.qkc.mstation.test;
  * Created by qukoucai001 on 2018/12/4.
  */
 public class Main {
-
-
-//    @Test
-    public void f1() {
-        System.out.println("Test");
+    public static void main(String[] args) {
+        System.out.println("hello future");
     }
 }
