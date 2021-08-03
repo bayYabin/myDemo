@@ -1,15 +1,11 @@
+server:
+  port: 3344
 spring:
-  profiles:
-    active: dev
-
----
-spring:
-  profiles: dev
   application:
-    name: springcloud-config-dev
-
----
-spring:
-  profiles: test
-  application:
-    name: springcloud-config-test
+    name: springcloud-config-server
+    #连接远程仓库
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/kolp/myDemo.git
